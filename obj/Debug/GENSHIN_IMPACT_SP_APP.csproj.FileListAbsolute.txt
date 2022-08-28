@@ -1,0 +1,16 @@
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\bin\Debug\GENSHIN_IMPACT_SP_APP.exe.config
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\bin\Debug\GENSHIN_IMPACT_SP_APP.exe
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\bin\Debug\GENSHIN_IMPACT_SP_APP.pdb
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.csproj.AssemblyReference.cache
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.csproj.SuggestedBindingRedirects.cache
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GUI\Login\login.g.cs
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\App.g.cs
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP_MarkupCompile.cache
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP_MarkupCompile.lref
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GUI\Login\login.baml
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.g.resources
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.Properties.Resources.resources
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.csproj.GenerateResource.cache
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.csproj.CoreCompileInputs.cache
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.exe
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.pdb
