@@ -24,10 +24,21 @@
                     <Setter Property="Foreground" Value="Blue"/>
                     <Setter Property="FontSize" Value="30"/>
                     <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="IsEnabled" Value="True"/>
                 </Style>
             </StackPanel.Resources>
-            <Button Content="Register account!!!"/>
-            <Button Content="Develop team!!!"/>
+            <Button x:Name="register_btn" Content="Register account!!!" Click="register_btn_Click"/>
+            <Button x:Name="developerInfo_btn" Content="Develop team!!!" Click="developerInfo_btn_Click"/>
         </StackPanel>
+        <TextBlock Background="Red" FontSize="30" Margin="1020,580,-88,53" RenderTransformOrigin="0.5,0.5" Text="Beta test" TextAlignment="Center" Foreground="White">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-45"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
     </Grid>
 </Window>

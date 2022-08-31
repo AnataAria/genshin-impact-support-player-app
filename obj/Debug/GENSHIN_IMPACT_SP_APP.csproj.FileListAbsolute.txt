@@ -14,3 +14,7 @@ G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.csproj.Gen
 G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.csproj.CoreCompileInputs.cache
 G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.exe
 G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GENSHIN_IMPACT_SP_APP.pdb
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GUI\Register\client\client_register.g.cs
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GUI\Register\client\client_register.baml
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GUI\genshin_interface\client_interface.g.cs
+G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\obj\Debug\GUI\genshin_interface\client_interface.baml

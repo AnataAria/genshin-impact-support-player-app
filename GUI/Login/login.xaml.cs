@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using GENSHIN_IMPACT_SP_APP.DB.DB_MANAGE;
+using GENSHIN_IMPACT_SP_APP.DB.DB_MODEL;
+using GENSHIN_IMPACT_SP_APP.GUI.Register.client;
+using GENSHIN_IMPACT_SP_APP.GUI.genshin_interface;
 
 namespace GENSHIN_IMPACT_SP_APP.GUI.Login
 {
@@ -20,6 +23,8 @@ namespace GENSHIN_IMPACT_SP_APP.GUI.Login
     /// </summary>
     public partial class login : Window
     {
+        login_manage manage = new login_manage();
+        
         public login()
         {
             InitializeComponent();
@@ -29,12 +34,28 @@ namespace GENSHIN_IMPACT_SP_APP.GUI.Login
         {
             String userName = username.Text;
             String passWord = password.Password;
-            if (userName.Length != 0 || passWord.Length != 0)
+            manage.loadData(userName, passWord);
+
+            if (manage.checkUserPass() == true)
             {
-                if (userName.ToLower().Equals("anataarisa") && passWord.Equals("Vinh12345.")){
-                    MessageBox.Show("Welcome to genshin impact");
-                }
+                MessageBox.Show("Welcome to Genshin Impact");
+                client_interface user = new client_interface(userName);
+                Visibility = Visibility.Collapsed;
+                user.ShowDialog();
+                
             }
+        }
+
+        private void register_btn_Click(object sender, RoutedEventArgs e)
+        {
+            client_register registerWindows = new client_register();
+            registerWindows.ShowDialog();
+            this.Close();
+        }
+
+        private void developerInfo_btn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

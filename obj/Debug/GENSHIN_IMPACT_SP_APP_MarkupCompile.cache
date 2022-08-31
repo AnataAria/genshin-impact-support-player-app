@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 G:\Pet_Projects\GENSHIN_IMPACT_SP_APP\App.xaml
-1515824285
+3-2134738269
 
-5-1517572519
-13-38814620
-GUI\Login\login.xaml;
+11-107461799
+162068231381
+GUI\genshin_interface\client_interface.xaml;GUI\Login\login.xaml;GUI\Register\client\client_register.xaml;
 
-False
+True
 
