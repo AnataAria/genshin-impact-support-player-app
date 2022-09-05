@@ -13,6 +13,10 @@ namespace GENSHIN_IMPACT_SP_APP.DB.DB_MODEL
         private int AR;
         private String accountName;
         private String pic;
+        private String city;
+        private String country;
+        private String language;
+        private String phoneNum; 
         
         public register_model()
         {

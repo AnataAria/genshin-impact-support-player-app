@@ -23,5 +23,17 @@ namespace GENSHIN_IMPACT_SP_APP.GUI.Register.client
         {
             InitializeComponent();
         }
+
+        private void basicInfo_btn_Click(object sender, RoutedEventArgs e)
+        {
+            if(basicInfo_Grid.IsVisible == false)
+            {
+                basicInfo_Grid. Visibility = Visibility.Visible;
+            }
+            else
+            {
+                basicInfo_Grid.Visibility = Visibility.Collapsed;
+            }
+        }
     }
 }
