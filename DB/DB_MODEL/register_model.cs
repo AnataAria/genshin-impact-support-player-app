@@ -16,12 +16,15 @@ namespace GENSHIN_IMPACT_SP_APP.DB.DB_MODEL
         private String city;
         private String country;
         private String language;
-        private String phoneNum; 
+        private String phoneNum;
+        private String gender;
         
         public register_model()
         {
 
         }
+
+        public 
 
     }
 }
