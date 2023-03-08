@@ -77,37 +77,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Tool\Validate\validate.cs" />
-    <Page Include="GUI\genshin_interface\client_interface.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="GUI\Login\login.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\AdminUser.cs" />
+    <Compile Include="Model\ClientUser.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="View\Login\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DB\DB_MANAGE\login_manage.cs" />
-    <Compile Include="DB\DB_MODEL\login_model.cs" />
-    <Compile Include="DB\DB_MODEL\register_model.cs" />
-    <Compile Include="GUI\genshin_interface\client_interface.xaml.cs">
-      <DependentUpon>client_interface.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Login\login.xaml.cs">
-      <DependentUpon>login.xaml</DependentUpon>
-    </Compile>
-    <Page Include="GUI\Register\client\client_register.xaml">
+    <Page Include="Assets\Icons\Icon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Assets\Images\BackGround.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Font\FontResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\Button_Style.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\TextBox_Style.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Login\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\Register\client\client_register.xaml.cs">
-      <DependentUpon>client_register.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -125,6 +131,8 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Font\Montserrat-Black.ttf" />
+    <Resource Include="Font\Montserrat-Bold.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -135,19 +143,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DB\SQL\" />
-    <Folder Include="GUI\Register\admin\" />
-    <Folder Include="Tool\Caculation\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\Login\img\genshinImpactInterface.png" />
-    <Resource Include="GUI\Login\img\genshinImpactInterface2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\Login\img\login.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\genshin_interface\img\settings.png" />
+    <Folder Include="Config\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -165,25 +161,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="GUI\Register\client\pic\user.png" />
+    <Resource Include="Assets\Images\Login.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="GUI\Register\client\pic\account.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\Register\client\pic\resume.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\Register\client\pic\profile.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\Register\client\pic\exit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\Register\client\pic\membership.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="GUI\Register\client\pic\genshinimpactLogo.png" />
+    <Resource Include="Assets\Images\genshin_logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

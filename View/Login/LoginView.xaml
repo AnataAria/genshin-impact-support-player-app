@@ -1,0 +1,101 @@
+﻿<Window x:Class="GENSHIN_IMPACT_SP_APP.View.Login.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GENSHIN_IMPACT_SP_APP.View.Login"
+        mc:Ignorable="d"
+        Title="Login Form"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Height="720"
+        Width="1280">
+    <Border CornerRadius="10">
+        <Border.Background>
+            <ImageBrush ImageSource="\Assets\Images\Login.jpg" Stretch="None"/>
+        </Border.Background>
+        <Border CornerRadius="10"
+                BorderThickness="5"
+                >
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="LightCyan" Offset="0"/>
+                    <GradientStop Color="Cyan" Offset="0.5"/>
+                    <GradientStop Color="DarkCyan" Offset="0.75"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Grid Opacity="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1190"/>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Column="0" Text="LOG IN GENSHIN IMPACT SUPPORT APP"
+                               FontSize="20"
+                               Foreground="DarkCyan"
+                               Background="Transparent"
+                               Padding="20,10,0,0"
+                               FontWeight="Bold"
+                               />
+                    <Button x:Name="destroy_btn" Click="destroy_btn_Click" Grid.Column="2" Style="{StaticResource Button_Close}" VerticalAlignment="Center" Margin="20,0,-20,0"/>
+                    <Button x:Name="small_btn" Grid.Column="1" Click="small_btn_Click" Style="{StaticResource Restore_Updown}" Grid.ColumnSpan="2" Margin="15,0,15,0"/>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Border CornerRadius="50"
+                            BorderThickness="5"
+                            Background="White"
+                            Width="500" Margin="385,47,385,40">
+                        <StackPanel Orientation="Vertical"
+                                Opacity="1"
+                                Width="500"
+                                Height="525" Margin="0,0,-10,45" VerticalAlignment="Bottom"
+                                >
+                            <DockPanel LastChildFill="False">
+                                <Image Source="/Assets/Images/genshin_logo.png" Stretch="None" HorizontalAlignment="Left" DockPanel.Dock="Left" Margin="10,0,0,0"/>
+                                <Label Content="LOGIN" FontSize="30" FontWeight="Bold" DockPanel.Dock="Right" VerticalContentAlignment="Center" FontFamily="{StaticResource Mon-Bold}" Margin="0,0,10,0" Foreground="DarkCyan"/>
+                            </DockPanel>
+
+                            <Label Content="LOGIN TERMINAL" HorizontalAlignment="Center" FontSize="30" Margin="0,10,0,0" FontFamily="{StaticResource Mon-Bold}" FontWeight="Bold"/>
+                            <TextBlock HorizontalAlignment="Center"
+                                   FontSize="20"
+                                   FontFamily="{StaticResource Mon_Black}"
+                                   FontWeight="Bold"
+                                   Opacity="0.5">Welcome to Genshin Impact Support App</TextBlock>
+                            <TextBlock HorizontalAlignment="Left"
+                                   FontSize="20"
+                                   Margin="20,20,0,0"
+                                   FontFamily="{StaticResource Mon-Bold}"
+                                   FontWeight="DemiBold">User Name</TextBlock>
+                            <TextBox HorizontalAlignment="Left"
+                                 Margin="20,5,0,0"
+                                 Height="30"
+                                 FontSize="20"
+                                 Background="Transparent"
+                                 Width="450"
+                                 ></TextBox>
+                            <TextBlock HorizontalAlignment="Left"
+                                   FontSize="20"
+                                   Margin="20,20,0,0"
+                                   FontFamily="{StaticResource Mon-Bold}"
+                                   FontWeight="DemiBold">Password</TextBlock>
+                            <PasswordBox HorizontalAlignment="Left"
+                                 Margin="20,5,0,0"
+                                 Height="30"
+                                 FontSize="20"
+                                 Background="Transparent"
+                                 Width="450"
+                                 ></PasswordBox>
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </Grid>
+        </Border>
+    </Border>
+</Window>
