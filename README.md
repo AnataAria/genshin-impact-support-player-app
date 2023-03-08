@@ -1,1 +1,1 @@
-# GENSHIN_IMPACT_SP_APP
+### Genshin Impact Support Player App
